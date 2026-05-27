@@ -53,10 +53,10 @@ export const dimensions: Dimension[] = [
   {
     id: 'color-text', label: '文字色', category: 'visual',
     options: [
-      { id: 'txt-dark', label: '深色文字', description: '高对比度的深灰文字', promptTemplate: '正文使用深灰色 ({text})，标题使用纯黑色，确保良好的可读性。', defaults: { text: '#1d1d1f' } },
-      { id: 'txt-soft', label: '柔和深灰', description: '稍柔和的深灰文字', promptTemplate: '文字色使用柔和的深灰色 ({text})，减轻长时间阅读的视觉疲劳。', defaults: { text: '#4a4a4f' } },
-      { id: 'txt-light', label: '浅色文字', description: '适用于深色背景的浅色文字', promptTemplate: '文字色使用浅色 ({text})，适合深色背景。', defaults: { text: '#f5f5f7' } },
-      { id: 'txt-custom', label: '自定义', description: '使用取色器自由选择文字色', promptTemplate: '文字色使用自定义颜色 ({text})。', defaults: { text: '#1d1d1f' } },
+      { id: 'txt-dark', label: '深色文字', description: '高对比度的深灰文字', promptTemplate: '正文使用深灰色 ({text})，标题使用纯黑色，确保良好的可读性。', defaults: { text: '#1d1d1f' }, preview: { text: '#1d1d1f' } },
+      { id: 'txt-soft', label: '柔和深灰', description: '稍柔和的深灰文字', promptTemplate: '文字色使用柔和的深灰色 ({text})，减轻长时间阅读的视觉疲劳。', defaults: { text: '#4a4a4f' }, preview: { text: '#4a4a4f' } },
+      { id: 'txt-light', label: '浅色文字', description: '适用于深色背景的浅色文字', promptTemplate: '文字色使用浅色 ({text})，适合深色背景。', defaults: { text: '#f5f5f7' }, preview: { text: '#f5f5f7' } },
+      { id: 'txt-custom', label: '自定义', description: '使用取色器自由选择文字色', promptTemplate: '文字色使用自定义颜色 ({text})。', defaults: { text: '#1d1d1f' }, preview: { text: '#1d1d1f' } },
     ],
   },
   {
