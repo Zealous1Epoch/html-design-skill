@@ -11,16 +11,18 @@
 
 ### 安装
 
+方式 1：通过 npx skills CLI（推荐）
 ```bash
-# 方式 1：通过 npx skills CLI（推荐）
 npx skills add Zealous1Epoch/html-design-skill
+```
 
-# 方式 2：手动 git clone
+方式 2：手动 git clone
+```bash
 git clone https://github.com/Zealous1Epoch/html-design-skill.git \
   ~/.claude/skills/html-design
 ```
 
-**在线 Demo**：[zealous1epoch.github.io/html-design-skill](https://zealous1epoch.github.io/html-design-skill) — 无需安装，直接在线体验。
+**在线 Demo**：[zealous1epoch.github.io/html-design-skill](https://zealous1epoch.github.io/html-design-skill)
 
 ### 使用
 
