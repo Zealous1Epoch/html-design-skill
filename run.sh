@@ -3,7 +3,7 @@ set -e
 
 # ── HTML Design Skill ──────────────────────────
 # 自包含入口脚本。所有路径相对于脚本自身。
-# GitHub: https://github.com/your-org/html-design-skill
+# GitHub: https://github.com/Zealous1Epoch/html-design-skill
 # ───────────────────────────────────────────────
 
 SKILL_DIR="$(cd "$(dirname "$0")" && pwd)"

@@ -3,24 +3,19 @@ import OptionCard from './OptionCard'
 import SliderControl from './SliderControl'
 import LivePreview from './LivePreview'
 import { useState } from 'react'
-import { buildFullPrompt } from '../utils/promptBuilder'
 
 export default function CenterCanvas() {
   const activeDimensionId = useConfigStore((s) => s.activeDimensionId)
   const dimensions = useConfigStore((s) => s.dimensions)
-  const setPreviewMode = useConfigStore((s) => s.setPreviewMode)
   const selections = useConfigStore((s) => s.selections)
 
   const [showPreview, setShowPreview] = useState(false)
-  const [previewPrompt, setPreviewPrompt] = useState('')
 
   const activeDimension = dimensions.find((d) => d.id === activeDimensionId)
   const isSlider = activeDimension?.controlType === 'slider'
   const selectedCount = Object.values(selections).filter((v) => v != null).length
 
   const handleGeneratePreview = () => {
-    const prompt = buildFullPrompt(useConfigStore.getState())
-    setPreviewPrompt(prompt)
     setShowPreview(true)
   }
 
