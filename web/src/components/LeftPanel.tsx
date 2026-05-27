@@ -52,6 +52,9 @@ export default function LeftPanel() {
                 const isActive = activeDimensionId === d.id
                 const isSlider = d.controlType === 'slider'
                 const sliderCfg = d.sliderConfig
+                const selectedOption = typeof selections[d.id] === 'string'
+                  ? d.options.find((o) => o.id === selections[d.id])
+                  : null
 
                 return (
                   <div
@@ -67,7 +70,7 @@ export default function LeftPanel() {
                   >
                     <div className="flex items-center justify-between">
                       <span className={`
-                        text-sm truncate
+                        text-sm truncate max-w-[120px]
                         ${isActive
                           ? 'text-[var(--slate)] font-semibold'
                           : 'text-[var(--gray-700)] font-normal'
@@ -75,10 +78,15 @@ export default function LeftPanel() {
                       `}>
                         {d.label}
                       </span>
-                      <div className="flex items-center gap-1.5 flex-shrink-0 ml-2">
+                      <div className="flex items-center gap-1.5 flex-shrink-0 ml-1">
                         {isSlider && sliderCfg && (
-                          <span className="font-mono text-[10px] text-[var(--gray-500)] bg-[var(--gray-200)]/50 px-1.5 py-0.5 rounded">
+                          <span className="font-mono text-[10px] text-[var(--gray-500)] bg-[var(--gray-200)]/50 px-1.5 py-0.5 rounded whitespace-nowrap">
                             {sliderCfg.promptLabel(selections[d.id] as number ?? sliderCfg.defaultValue)}
+                          </span>
+                        )}
+                        {isSet && !isSlider && selectedOption && (
+                          <span className="text-[10px] text-[var(--gray-500)] bg-[var(--gray-200)]/50 px-1.5 py-0.5 rounded max-w-[70px] truncate">
+                            {selectedOption.label}
                           </span>
                         )}
                         {isSet && !isActive && (
