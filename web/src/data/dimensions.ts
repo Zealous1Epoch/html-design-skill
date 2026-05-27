@@ -114,15 +114,6 @@ export const dimensions: Dimension[] = [
     },
     options: [],
   },
-  {
-    id: 'dark-mode', label: '暗黑模式', category: 'visual', controlType: 'options',
-    options: [
-      { id: 'dm-auto', label: '跟随系统', description: '自动跟随系统设置切换', promptTemplate: '暗黑模式跟随系统 prefers-color-scheme 自动切换。', defaults: {} },
-      { id: 'dm-light', label: '强制亮色', description: '始终使用亮色模式', promptTemplate: '强制使用亮色模式。', defaults: {} },
-      { id: 'dm-dark', label: '强制暗色', description: '始终使用暗色模式', promptTemplate: '强制使用暗色模式，背景色为深色系，文字色为浅色系。', defaults: {} },
-      { id: 'dm-toggle', label: '手动切换', description: '页面上提供切换按钮', promptTemplate: '在页面右上角提供暗黑模式手动切换按钮，默认跟随系统。', defaults: {} },
-    ],
-  },
 
   // ========== 组件样式 (7) ==========
   {
