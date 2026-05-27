@@ -22,7 +22,7 @@ git clone https://github.com/Zealous1Epoch/html-design-skill.git \
 
 首次运行时自动安装 npm 依赖。
 
-**在线 Demo**: [web-sigma-one-56.vercel.app](https://web-sigma-one-56.vercel.app)
+**在线 Demo**: [zealous1epoch.github.io/html-design-skill](https://zealous1epoch.github.io/html-design-skill)
 
 ## 用法
 
