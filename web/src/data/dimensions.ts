@@ -62,11 +62,11 @@ export const dimensions: Dimension[] = [
   {
     id: 'color-accent', label: '强调色', category: 'visual',
     options: [
-      { id: 'acc-coral', label: '珊瑚红', description: '醒目的珊瑚红强调色', promptTemplate: '强调色使用珊瑚红 ({accent})，用于 CTA 按钮和关键信息突出。', defaults: { accent: '#ff6b6b' } },
-      { id: 'acc-amber', label: '琥珀黄', description: '温暖的琥珀黄强调色', promptTemplate: '强调色使用琥珀黄 ({accent})，营造温暖而有活力的视觉焦点。', defaults: { accent: '#f59e0b' } },
-      { id: 'acc-cyan', label: '青色', description: '清爽的青色强调', promptTemplate: '强调色使用青色 ({accent})，清爽而富科技感。', defaults: { accent: '#06b6d4' } },
-      { id: 'acc-pink', label: '粉色', description: '时尚的粉色强调', promptTemplate: '强调色使用粉色 ({accent})，时尚且引人注目。', defaults: { accent: '#ec4899' } },
-      { id: 'acc-custom', label: '自定义', description: '使用取色器自由选择强调色', promptTemplate: '强调色使用自定义颜色 ({accent})。', defaults: { accent: '#ff6b6b' } },
+      { id: 'acc-coral', label: '珊瑚红', description: '醒目的珊瑚红强调色', promptTemplate: '强调色使用珊瑚红 ({accent})，用于 CTA 按钮和关键信息突出。', defaults: { accent: '#ff6b6b' }, preview: { accent: '#ff6b6b' } },
+      { id: 'acc-amber', label: '琥珀黄', description: '温暖的琥珀黄强调色', promptTemplate: '强调色使用琥珀黄 ({accent})，营造温暖而有活力的视觉焦点。', defaults: { accent: '#f59e0b' }, preview: { accent: '#f59e0b' } },
+      { id: 'acc-cyan', label: '青色', description: '清爽的青色强调', promptTemplate: '强调色使用青色 ({accent})，清爽而富科技感。', defaults: { accent: '#06b6d4' }, preview: { accent: '#06b6d4' } },
+      { id: 'acc-pink', label: '粉色', description: '时尚的粉色强调', promptTemplate: '强调色使用粉色 ({accent})，时尚且引人注目。', defaults: { accent: '#ec4899' }, preview: { accent: '#ec4899' } },
+      { id: 'acc-custom', label: '自定义', description: '使用取色器自由选择强调色', promptTemplate: '强调色使用自定义颜色 ({accent})。', defaults: { accent: '#ff6b6b' }, preview: { accent: '#ff6b6b' } },
     ],
   },
   {
